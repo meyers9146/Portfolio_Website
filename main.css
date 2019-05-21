@@ -5,6 +5,22 @@
     border: 3px #24099b;
 }
 
+a:link {
+    color: #0afcfc;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:visited {
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:hover {
+    color: #fd1dfd;
+}
+
 h1 {
     align-content: center;
 }
@@ -45,4 +61,9 @@ p {
     margin: auto;
     width: 60%;
     padding: 10px;
+}
+
+.text-center-additional {
+    margin:auto;
+    width: 60%;
 }

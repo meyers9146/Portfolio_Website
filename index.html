@@ -2,29 +2,41 @@
 <html>
     <head>
     <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href = "main.css">
     <title>Official Website of Mike Meyers</title>
     </head>
     <body>
         <!-- Page title -->
-        <h1 class="title">Web Portfolio of Michael Meyers</h1>
-        <div class = "center_box">
-            <h2>(or just call me Mike)</h2>
+        <div class="row container-fluid" style="padding-left: 5em;">
+            <h1 class="title">Web Portfolio of Michael Meyers</h1>
+        </div>
+            <div class = "center_box text-right" style="padding-right: 5em;">
+                <h2>(or just call me Mike)</h2>
         </div>
 
-        <!-- Navigation bar (will add other pages eventually) -->
-       <div id="navigation">
-            <p>
-                <!-- Home Page -->
-                <a href="/">Home</a>
-                <!-- Wikipedia -->
-                <a href=http://wikpedia.org>Wikipedia, for some reason</a>
-                <!-- WWW DOT COM-->
-                <a href=http://www.wwwdotcom.com>www.com</a>
-                <!-- Blog Link -->
-                <a href=/blog/index.html> The Blog</a>
-            </p>
-        </div>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-expand-lg">
+            <div class="row align-items-center container-fluid">
+                <div class="col-sm-2"></div> <!-- spacer column --> 
+                <div class="col-sm-6">
+                    <ul class="navbar-nav container-fluid justify-content-center">
+                        <p>
+                            <!-- Home Page -->
+                            <li><a href="/">Home</a></li>
+                            <!-- Wikipedia -->
+                            <li><a href=http://wikpedia.org>Wikipedia, for some reason</a></li>
+                            <!-- WWW DOT COM-->
+                            <li><a href=http://www.wwwdotcom.com>www.com</a></li>
+                            <!-- Blog Link -->
+                            <li><a href=/blog> The Blog</a></li>
+                        </p>
+                    </ul>
+                </div>
+                <div class="col-sm-2"></div> <!-- spacer column --> 
+            </div>
+        </nav>
 
         <!-- Messing with text, classes, etc-->
         <p>
@@ -32,8 +44,15 @@
         </p>
 
         <!-- Yes, I know that linking to hosted images is bad! -->
-        <img src = "https://target.scene7.com/is/image/Target/GUEST_f5d0cfc3-9d02-4ee0-a6c6-ed5dc09971d1?wid=488&hei=488&fmt=pjpeg"
-            alt = "Just for you"></a>
+        <div class="row align-items-center">
+            <div class="col-md-4 offset-sm-1 align-items-right">
+                <img src = "https://target.scene7.com/is/image/Target/GUEST_f5d0cfc3-9d02-4ee0-a6c6-ed5dc09971d1?wid=488&hei=488&fmt=pjpeg"
+                   alt = "Just for you"></a>
+            </div>
+            <div class="col-md text-left">
+                It took me way too long to align this banana
+            </div>
+        </div>
 
         <p class="testerino">
             Lol so randum amirite
@@ -45,5 +64,9 @@
 
         <!-- Test link -->
         <a href = "http://wikipedia.org/wiki/Mike_Myers" >This is not me</a>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
